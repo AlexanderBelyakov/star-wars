@@ -1,0 +1,81 @@
+.character-card {
+    width: 351px;
+    height: 136px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(240, 240, 240, 1);
+    margin-bottom: 45px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px rgba(33, 33, 33, 0.1);
+}
+
+.character-card__info {
+    display: flex;
+    padding: 6px 25px;
+}
+
+.character-card__name {
+    margin: 0;
+    color: rgba(33, 33, 33, 1);
+    filter: drop-shadow(4px 4px 4px rgba(33, 33, 33, 0.1));
+    font-weight: 700;
+    font-size: 18px;
+    padding: 5px 0 12px 25px;
+}
+
+.character-card__number {
+    margin: 0;
+    border: 3px solid rgba(33, 33, 33, 1);
+    border-radius: 50%;
+    width: 38px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.character-card__caption {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 18px;
+    color: rgba(75, 75, 75, 1);
+    height: 11px;
+    width: 41px;
+    text-align: center;
+}
+
+.character-card__gender {
+    margin: 0;
+    font-size: 12px;
+    border-radius: 11px;
+    padding: 0 7px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.18);
+}
+
+.character-card__gender_male {
+    background-color: rgba(115, 214, 119, 1);
+}
+
+.character-card__gender_female {
+    background-color: rgba(201, 86, 255, 1);
+}
+
+.character-card__gender_hermaphrodite {
+    background-color: rgba(245, 219, 19, 1);
+}
+.character-card__gender_na {
+    display: none;
+}
+
+.character-card__birthday {
+    margin: 0;
+    margin-left: 16px;
+    font-size: 12px;
+    background-color: rgba(7, 214, 242, 1);
+    border-radius: 11px;
+    padding: 0 7px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.18);
+}
