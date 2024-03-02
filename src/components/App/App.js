@@ -4,8 +4,21 @@ import { Main } from '../Main/Main';
 import { Route, Routes } from 'react-router-dom';
 import { NotFound } from '../NotFound/NotFound';
 import { Characters } from '../Characters/Characters';
+import { Popup } from '../Popup/Popup';
+import { useState } from 'react';
 
 function App() {
+  const [isPopupOpen, setPopupOpen] = useState(null)
+
+  function handleOpenPopup(card) {
+    setPopupOpen(card)
+    console.log(card)
+  }
+  
+  function handleClosePopup() {
+    setPopupOpen(null)
+  }
+
   return (
     <div className="app">
       <Routes>
@@ -25,7 +38,7 @@ function App() {
         element = {
           <>
             <Header />
-            <Characters />
+            <Characters onCardClick={handleOpenPopup}/>
           </>
         }
         />
@@ -36,6 +49,7 @@ function App() {
         }
         />
       </Routes>
+      <Popup card={isPopupOpen} close={handleClosePopup}/>
     </div>
   );
 }

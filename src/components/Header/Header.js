@@ -6,7 +6,7 @@ import { Navigation } from '../Navigation/Navigation';
 export function Header() {
     return (
         <header className="header">
-            <Link to="/"><img className="header__logo" src={logo} alt="Логотип"/> </Link>
+            <Link to="/"><img className="header__logo" src={logo} alt="Logo"/> </Link>
             <Navigation />
         </header>
     )

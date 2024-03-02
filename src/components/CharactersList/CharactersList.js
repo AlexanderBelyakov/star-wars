@@ -1,7 +1,7 @@
 import './CharactersList.css';
 import { CharacterCard } from '../CharacterCard/CharacterCard';
 
-export function CharactersList({receivedCharactersList}) {
+export function CharactersList({receivedCharactersList, onCardClick}) {
     return (
         <ul className="characters-list">
             {
@@ -9,6 +9,7 @@ export function CharactersList({receivedCharactersList}) {
                     <CharacterCard
                     key={index}
                     receivedCharacter={obj}
+                    onCardClick={onCardClick}
                     />
                 ))
             }
