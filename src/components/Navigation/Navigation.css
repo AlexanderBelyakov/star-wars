@@ -1,0 +1,23 @@
+.navigation {
+    font-weight: 400px;
+    font-size: 25px;
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation__link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 15px;
+}
+
+.navigation__link_actual {
+    border-bottom: solid 3px rgba(207, 218, 176, 1);
+}
+
+.navigation__link:hover {
+    opacity: .5;
+    transition: .4s ease-in-out;
+}
